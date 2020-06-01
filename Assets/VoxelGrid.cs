@@ -19,7 +19,7 @@ public class VoxelGrid : MonoBehaviour {
     {
         voxelSize = 1f / resolution;
         //Initialize(resolution, voxelSize);
-        Debug.LogFormat("grid rez:{0} gridSize:{1}", resolution, voxelSize);
+        //Debug.LogFormat("grid rez:{0} gridSize:{1}", resolution, voxelSize);
     }
 
     public void Initialize(int resolution, float voxelSize)
@@ -70,6 +70,12 @@ public class VoxelGrid : MonoBehaviour {
             cubeRenderer.material.color = Color.Lerp(colorStart, colorEnd, duration);
         }
         return pf;
+    }
+
+    public void SetVoxel(int x, int y, bool state)
+    {
+        voxels[y * resolution + x] = state;
+        Debug.LogFormat("set votex {0},{1}",x,y);
     }
 
     // Use this for initialization

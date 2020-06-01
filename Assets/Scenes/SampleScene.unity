@@ -140,9 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb3cf4abe45589448e5b86998d27cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 2
+  size: 4
   voxelResolution: 16
-  chunkResolution: 2
+  chunkResolution: 4
   voxelGridPrefab: {fileID: 114441624503260880, guid: 4605348219944c646a25ba8b6a846e42,
     type: 2}
 --- !u!4 &44454339
@@ -206,7 +206,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
